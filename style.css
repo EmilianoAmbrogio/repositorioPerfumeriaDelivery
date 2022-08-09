@@ -156,10 +156,6 @@ body .footer {
   align-content: center;
 }
 
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;} 
- } 
 
 .titulo__cajaNosotros {
   font-family: "Josefin Sans", sans-serif;
@@ -167,9 +163,6 @@ body .footer {
   font-size: 70px;
   color: #b09e80;
   margin-top: 80px;
-  animation-name: fadeIn;
-  animation-duration: 2s;
-  animation-play-state:running;
 }
 
 .parrafo__cajaNosotros {
