@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;1,500;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>PerfumeríaDelivery</title>
+</head>
+<body>
+
+  <nav class="navegador">
+    <img src="imagenes/delivery-perfumeria-logo.png"
+    alt="logo " class="logo">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkboton">
+      <img src="imagenes/hamburgesa.png" alt="hamburguesa">
+    </label>
+    <ul class="menu">
+      <li><a href="index.html" class="item__menu"> Home</a></li>
+      <li><a href="coloracion.html" class="item__menu"> Coloración</a></li>
+      <li><a href="ofertas.html" class="item__menu"> Ofertas</a></li>
+      <li><a href="take-away.html" class="item__menu"> Take Away</a></li>
+      <li><a href="contactos.html" class="item__menu"> Contacto </a></li>
+    </ul>
+  </nav> 
+      <form class="needs-validation container" novalidate>
+        <div class="fondoContactos">
+        </div>
+        <div class="form-row text-white text-center ">
+          <div class="col-md-4 mb-3">
+            <label for="validationTooltip01 ">Nombre</label>
+            <input type="text" class="form-control" id="validationTooltip01" placeholder="Juliana" value="Juliana" required>
+            <div class="valid-tooltip">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 ">
+            <label for="validationTooltip02">TEL</label>
+            <input type="number" class="form-control" id="validationTooltip02" placeholder="351 444 444" value="Otto" required>
+            <div class="valid-tooltip">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationTooltipUsername">MAIL</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+              </div>
+              <input type="text" class="form-control" id="validationTooltipUsername" placeholder="juliana@gmail.com" aria-describedby="validationTooltipUsernamePrepend" required>
+              <div class="invalid-tooltip">
+                Please choose a unique and valid username.
+              </div>
+            </div>
+          </div>
+        </div>
+        <select class="form-select form-select-lg mb-3 form-control" aria-label=".form-select-lg example">
+            <option selected>Me interesa...</option>
+            <option value="1">Cuidado Personal</option>
+            <option value="2">Coloración</option>
+            <option value="3">Belleza</option>
+          </select>
+        <div class="form-check form-switch text-white text-center">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Quiero Recibir lista de precios</label>
+          </div>
+        <button class="btn btn-primary" type="submit">ENVIAR</button>
+      </form>
+      <footer class="footer" data-aos="fade-up">
+        <article class="cuerpo__footer">
+          <div class="cajas__footer">
+            <h6 class="titulos__footer"> PERFUMERÍA DELIVERY</h6>
+            <P class="parrafo__footer">Te ofrecemos experiencia, seriedad y una manera dinámica de acceder a los productos de cuidado personal que necesitas sin moverte de la silla de tu casa.</P>
+          </div>
+          <div class="cajas__footer"> 
+            <h6 class="titulos__footer"> CONTÁCTANOS</h6>
+            <ul class="parrafo__footer">
+              <li>Alfonsina Storni 569</li>
+              <li>Barrio Liceo Segunda Sección</li>
+              <li>Córdoba, Argentina</li>
+              <li>Email: perfumeriadelibery@gmail.com</li>
+            </ul>
+          </div>
+          <div class="cajas__footer">
+            <h6 class="titulos__footer">NUESTROS PRODUCTOS</h6>
+            <P class="parrafo__footer">Si te interesa saber cual es nuestro stok permanente de productos dejanos tu mail y recibiras toda la información</P>
+            <form action="guardar.phm" method="POST">
+              <input type="email" name="mail" placeholder="perf..@gmail.com"  class="mail__footer">
+              <input type="submit" value="+info" class="boton__footer">
+            </form>
+          </div>
+          <div class="caja__qr">
+            <img src="imagenes/QR.jpeg" width="100px" alt="codigo qr asociado a un wasap"  class="qr__footer">
+          </div>
+        </article>
+        <article>
+        <div class="caja__copyright">
+          <h6>© PERFUMERÍA DELIVERY 2022</h6>
+        </div>
+      </article>
+    </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
