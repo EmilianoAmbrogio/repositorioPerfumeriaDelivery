@@ -167,11 +167,12 @@ $fuente_principal: "Josefin Sans", sans-serif;
     font-size: 70px;
     color: $color_secundario;
     margin-top: 80px;
+    margin-bottom: 10px;
   }
   
   .parrafo__cajaNosotros {
     font-family: "Roboto", sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     color: white;
     text-align: justify;
     font-weight: 300;
@@ -852,8 +853,402 @@ $fuente_principal: "Josefin Sans", sans-serif;
     margin-top: 20px;
     margin-bottom: 30px;
   }
+
+
+
+
+
+
+
   
-  @media screen and (max-width: 480px) {
+
+  @media screen and (max-width: 768px) and (min-width: 481px)   {
+    body {
+      background-color:$color_principal;
+      display: grid;
+      grid-template-areas:
+        "navegador"
+        "header"
+        "cajaNosotros"
+        "cajaProductosPortada"
+        "cajaMarcas"
+        "footer";
+    }
+  
+    body .navegador {
+      grid-area: navegador;
+    }
+    body .header {
+      grid-area: header;
+    }
+    body .cajaNosotros {
+      grid-area: cajaNosotros;
+    }
+    body .cajaProductosPortada {
+      grid-area: cajaProductosPortada;
+    }
+    body .cajaMarcas {
+      grid-area: cajaMarcas;
+    }
+    body .footer {
+      grid-area: footer;
+    }
+  
+    .navegador {
+      height: 130px;
+      padding-left: 100px;
+      padding-right: 150px;
+    }
+  
+    .logo {
+      width: 230px;
+      height: 90px;
+    }
+  
+    .menu {
+      flex-direction: column;
+      align-items: center;
+      background-color:$color_secundario;
+      position: fixed;
+      top: 130px;
+      width: 100%;
+      height: calc(100vh - 130px);
+      overflow: auto;
+      z-index: 50;
+      padding-top: 25px;
+      left: 100%;
+      transition: all 1s;
+    }
+  
+    .item__menu {
+      font-size: 25px;
+      color: $color_principal;
+      font-family:$fuente_principal;
+    }
+  
+    .navegador ul li {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .checkboton {
+      display: inline-block;
+    }
+  
+    #check:checked ~ .menu {
+      left: 0;
+    }
+  
+    .header {
+      height: calc(100vh - 130px);
+    }
+  
+    .frase__principal__portada {
+      font-size: 40px;
+      text-align: center;
+    }
+  
+    .frase__secundaria__portada {
+      padding: 10px;
+    }
+  
+    .cajaNosotros {
+      height: 280px;
+     
+    }
+  
+    .titulo__cajaNosotros {
+      font-size: 50px;
+    }
+  
+    .parrafo__cajaNosotros {
+     margin-left: 30px;
+     margin-right: 30px;
+     font-size: 15px;
+    }
+  
+    .cajaProductosPortada div {
+    width: 230px;
+    height: 350px;
+    border-radius: 20px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+
+  #belleza {
+    background-image: url(imagenes/gifBelleza.gif);
+    background-size:contain;
+    background-position:bottom;
+  }
+  
+  #coloracion {
+    background-image: url(imagenes/gifColoracion.gif);
+    background-size:contain;
+    background-position:bottom;
+  }
+  
+  #cuidado {
+    background-image: url(imagenes/gifCuidadoPersonal.gif);
+    background-size:contain;
+    background-position:bottom;
+  }
+  
+  
+    .cajaMarcas h3 {
+      color: #fff;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 30px;
+      
+    }
+
+
+  
+    .cajaMarcas ul {
+      flex-flow: column;
+      align-items: center;
+    }
+  
+    .cajaMarcas ul li {
+      color: #192537;
+      margin: 0px;
+    }
+  
+    .resaltadorMarcas {
+      animation-duration: 10s;
+    }
+  
+    @keyframes resaltaAnimacion {
+      0% {
+        width: 200px;
+        top: 100px;
+        bottom: 120px;
+        left: 280px;
+      }
+      50% {
+        width: 100px;
+        top: 225px;
+        bottom: 20px;
+        left: 330px;
+      }
+      100% {
+        width: 200px;
+        top: 100px;
+        bottom: 120px;
+        left: 280px;
+      }
+    }
+  
+    .footer {
+      height: 480px;
+    }
+  
+    .cuerpo__footer {
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content:space-around;
+    }
+    .cajas__footer {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 10px;
+    }
+  
+    .parrafo__footer {
+      text-align: center;
+    }
+
+    .caja__qr {
+      margin-top: 80px;
+      width: 250px;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  
+   
+  
+    .caja__copyright {
+      height: 40px;
+      margin-top: 30px;
+      background-color: #192537;
+      align-items: center;
+    }
+  
+    #bodyColoracion {
+      margin: 0;
+      display: grid;
+      grid-template-areas:
+        "navegador navegador"
+        "tituloColoracion tituloColoracion"
+        "tintura1 tintura2"
+        "tintura3  tintura4"
+        "tintura5 tintura6"
+        "videoTinturas videoTinturas"
+        "footer footer"
+        ;
+    }
+  
+    .tarjetaTintura {
+      width: 300px;
+      height: 280px;
+      margin: 20px;
+      position: relative;
+    }
+    
+  .fotoTintura {
+    border-radius: 20px;
+    width: 300px;
+    padding: 0px 10px 5px 10px;
+  }
+  
+    .tintura1 ,.tintura3 , .tintura5 {
+      justify-self:end;
+    }
+
+    .tintura2 , .tintura4 , .tintura6 {
+      justify-self: start;
+    }
+  
+  
+    .tituloColoracion {
+      height: 140px;
+      width: 600px;
+      border-radius: 0px 0px 80px 80px;
+    }
+  
+    .tituloColoracion h3 {
+      font-size: 40px;
+      padding-top: 40px;
+      font-weight: 300;
+    }
+  
+    .carta {
+      width: 300px;
+      position: absolute;
+      margin-top: 83px;
+    }
+  
+    .videoTinturas {
+      height: 400px;
+      margin-bottom: 50px;
+    }
+    #iframe {
+      width: 600px;
+      height: 210px;
+    }
+  
+    #bodyOfertas {
+      margin: 0;
+      display: grid;
+      grid-template-areas:
+        " navegador navegador"
+        " tituloOfertas ofertaTeatrical  "
+        " tituloOfertas ofertaGel  "
+        " comnbo1 combo2 "
+         "combo1 combo2 "
+         "ofertaColbert ofertaColbert"
+       "footer footer"
+       ;
+    }
+
+    .ofertaColbert{
+      display: none;
+    }
+  
+    .tituloOfertas {
+      height: 450px;
+      margin-top:100px;
+    }
+  
+    #letrasOfertas2 {
+      font-size: 180px;
+      line-height: 150px;
+    }
+    #letrasOfertas1 {
+      font-size: 150px;
+      line-height: 150px;
+    }
+    .tarjetaCombo {
+      width: 300px;
+      height: 450px;
+      margin: 30px;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .fotoCombo {
+      border-radius: 20px;
+      width: 280px;
+      height: 350px;
+      padding: 0px 10px 5px 10px;
+    }
+
+    .combo2 {
+      justify-self:center;
+      margin-right: 50px;
+    }
+
+    .combo1 {
+      justify-self:center;
+      margin-left: 50px;
+    }
+    .header-away{
+      height: calc(100vh - 130px);
+    }
+  
+    .botonAuto {
+      margin-bottom: 90px;
+    }
+  
+    @keyframes autito {
+      0% {
+        margin-right: 1000px;
+      }
+      100% {
+        margin-left: 1500px;
+      }
+    }
+  
+    .wasap {
+      width: 60px;
+      margin-left: 400px;
+      margin-top: 160px;
+    }
+  
+    .tituloMapa {
+      font-size: 30px;
+      margin-left: 260px;
+      margin-top: 230px;
+      padding: 5px;
+    }
+  
+    .needs-validation {
+      height: 600px;
+      margin-bottom: 40px;
+    }
+    .fondoContactos {
+      height: 180px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  @media screen and (max-width: 480px) and (min-width:321px) {
     body {
       background-color:$color_principal;
       display: grid;
@@ -914,7 +1309,7 @@ $fuente_principal: "Josefin Sans", sans-serif;
     .item__menu {
       font-size: 25px;
       color: $color_principal;
-      font-family:$color_principal;
+      font-family:$fuente_principal;
     }
   
     .navegador ul li {
@@ -935,10 +1330,10 @@ $fuente_principal: "Josefin Sans", sans-serif;
     }
   
     .frase__principal__portada {
-      margin-left: 20px;
-      margin-right: 20px;
       font-size: 40px;
       text-align: center;
+      margin-left: 30px;
+      margin-right: 30px ;
     }
   
     .frase__secundaria__portada {
@@ -949,6 +1344,7 @@ $fuente_principal: "Josefin Sans", sans-serif;
       height: 280px;
       padding-left: 25px;
       padding-right: 25px;
+      margin-bottom: 30px;
     }
   
     .titulo__cajaNosotros {
@@ -964,16 +1360,6 @@ $fuente_principal: "Josefin Sans", sans-serif;
       flex-flow: column;
     }
   
-    .cajaProductosPortada div h4 {
-      color: $color_secundario;
-      font-family: $fuente_principal;
-      font-size: 30px;
-      font-weight: 300;
-      text-transform: uppercase;
-      opacity: 0;
-      padding-top: 30px;
-      text-align: center;
-    }
   
     .cajaMarcas h3 {
       color: #fff;
@@ -1084,13 +1470,9 @@ $fuente_principal: "Josefin Sans", sans-serif;
     }
   
     .tituloColoracion h3 {
-      font-family: "Josefin Sans", sans-serif;
-      text-transform: uppercase;
       font-size: 40px;
       padding-top: 20px;
       font-weight: 300;
-      text-align: center;
-      color: #192537;
     }
   
     .carta {
@@ -1156,7 +1538,7 @@ $fuente_principal: "Josefin Sans", sans-serif;
     }
   
     .header-away {
-      height: calc(100vh - 110px);
+      height: calc(100vh - 100px);
     }
   
     .botonAuto {
@@ -1186,10 +1568,389 @@ $fuente_principal: "Josefin Sans", sans-serif;
     }
   
     .needs-validation {
-      height: calc(100vh - 130px);
+      height:550px;
       margin-bottom: 40px;
     }
     .fondoContactos {
       height: 140px;
     }
   }
+
+
+
+
+
+
+
+
+   
+  @media screen and (max-width: 320px) {
+    body {
+      background-color:$color_principal;
+      display: grid;
+      grid-template-areas:
+        "navegador"
+        "header"
+        "cajaNosotros"
+        "cajaProductosPortada"
+        "cajaMarcas"
+        "footer";
+    }
+  
+    body .navegador {
+      grid-area: navegador;
+    }
+    body .header {
+      grid-area: header;
+    }
+    body .cajaNosotros {
+      grid-area: cajaNosotros;
+    }
+    body .cajaProductosPortada {
+      grid-area: cajaProductosPortada;
+    }
+    body .cajaMarcas {
+      grid-area: cajaMarcas;
+    }
+    body .footer {
+      grid-area: footer;
+    }
+  
+    .navegador {
+      height: 120px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  
+    .logo {
+      width: 170px;
+      height: 70px;
+    }
+  
+    .menu {
+      flex-direction: column;
+      align-items: center;
+      background-color:$color_secundario;
+      position: fixed;
+      top: 120px;
+      width: 100%;
+      height: calc(100vh - 120px);
+      overflow: auto;
+      z-index: 50;
+      padding-top: 25px;
+      left: 100%;
+      transition: all 1s;
+    }
+  
+    .item__menu {
+      font-size: 25px;
+      color: $color_principal;
+      font-family:$fuente_principal;
+    }
+  
+    .navegador ul li {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  
+    .checkboton {
+      display: inline-block;
+    }
+  
+    #check:checked ~ .menu {
+      left: 0;
+    }
+  
+    .header {
+      height: calc(100vh - 100px);
+    }
+  
+    .frase__principal__portada {
+      font-size: 40px;
+      text-align: center;
+      margin-left: 30px;
+      margin-right: 30px ;
+    }
+  
+    .frase__secundaria__portada {
+      padding: 10px;
+    }
+  
+    .cajaNosotros {
+      height: 280px;
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-top: 40px;
+    }
+  
+    .titulo__cajaNosotros {
+      font-size: 30px;
+    }
+  
+    .parrafo__cajaNosotros {
+      margin: 2px;
+      margin-top: 10px;
+      margin-bottom: 50px;
+    }
+  
+    .cajaProductosPortada {
+      flex-flow: column;
+    }
+    .cajaProductosPortada div {
+      width: 230px;
+      height: 350px;
+      border-radius: 20px;
+      margin: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+  
+    #belleza {
+      background-image: url(imagenes/gifBelleza.gif);
+      background-size:contain;
+      background-position:bottom;
+    }
+    
+    #coloracion {
+      background-image: url(imagenes/gifColoracion.gif);
+      background-size:contain;
+      background-position:bottom;
+    }
+    
+    #cuidado {
+      background-image: url(imagenes/gifCuidadoPersonal.gif);
+      background-size:contain;
+      background-position:bottom;
+    }
+  
+    .cajaMarcas h3 {
+      color: #fff;
+      font-family:$fuente_principal;
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+  
+    .cajaMarcas ul {
+      flex-flow: column;
+      align-items: center;
+    }
+  
+    .cajaMarcas ul li {
+      color: #192537;
+      margin: 0px;
+    }
+  
+    .resaltadorMarcas {
+      animation-duration: 10s;
+    }
+  
+    @keyframes resaltaAnimacion {
+      0% {
+        width: 200px;
+        top: 100px;
+        bottom: 200px;
+        left: 60px;
+      }
+      50% {
+        width: 100px;
+        top: 220px;
+        bottom: 15px;
+        left: 110px;
+      }
+      100% {
+        width: 200px;
+        top: 100px;
+        bottom: 200px;
+        left: 60px;
+      }
+    }
+  
+    .footer {
+      height: 800px;
+    }
+  
+    .cuerpo__footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cajas__footer {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .parrafo__footer {
+      text-align: center;
+    }
+  
+    .caja__qr {
+      margin-top: 40px;
+    }
+  
+    .caja__copyright {
+      height: 40px;
+      margin-top: 30px;
+      background-color: #192537;
+      align-items: center;
+    }
+  
+    #bodyColoracion {
+      margin: 0;
+      display: grid;
+      grid-template-areas:
+        "navegador"
+        "tituloColoracion"
+        "tintura1"
+        "tintura2"
+        "tintura3"
+        "tintura4"
+        "tintura5"
+        "tintura6"
+        "videoTinturas"
+        "footer";
+    }
+  
+    .tarjetaTintura {
+      width: 250px;
+      height: 250px;
+      position: relative;
+    }
+
+    .fotoTintura {
+      border-radius: 20px;
+      width: 250px;
+      padding: 0px 10px 5px 10px;
+    }
+
+    .tintura1, .tintura2, .tintura3, .tintura4, .tintura5 , .tintura6 {
+      justify-self: center;
+    }
+    
+
+  
+    .tituloColoracion {
+      height: 170px;
+      width: 240px;
+      border-radius: 0px 0px 40px 40px;
+    }
+  
+    .tituloColoracion h3 {
+      font-size: 40px;
+      padding-top: 20px;
+      font-weight: 300;
+    }
+  
+    .carta {
+      width: 200px;
+      position: absolute;
+      margin-top: 130px;
+    }
+  
+    .videoTinturas {
+      height: 400px;
+      margin-bottom: 50px;
+    }
+    #iframe {
+      width: 250px;
+      height: 210px;
+    }
+  
+    #bodyOfertas {
+      margin: 0;
+      display: grid;
+      grid-template-areas:
+        " navegador "
+        " tituloOfertas "
+        " combo1"
+        " ofertaTeatrical"
+        "ofertaGel"
+        "combo2"
+        "ofertaColbert"
+        "footer";
+    }
+  
+    .tituloOfertas {
+      height: 330px;
+      margin-top: 5px;
+    }
+  
+    #letrasOfertas2 {
+      font-size: 100px;
+      line-height: 100px;
+    }
+    #letrasOfertas1 {
+      font-size: 120px;
+      line-height: 100px;
+    }
+    .tarjetaCombo {
+      width: 240px;
+      height: 430px;
+      margin: 30px;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .fotoCombo {
+      border-radius: 20px;
+      width: 230px;
+      height: 340px;
+      padding: 0px 10px 5px 10px;
+    }
+    .ofertaGel, .ofertaTeatrical, .combo2, .combo1, .ofertaColbert  {
+      justify-self: center;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  
+    .header-away {
+      height: calc(100vh - 100px);
+    }
+  
+    .botonAuto {
+      margin-bottom: 120px;
+    }
+  
+    @keyframes autito {
+      0% {
+        margin-right: 500px;
+      }
+      100% {
+        margin-left: 900px;
+      }
+    }
+  
+    .wasap {
+      width: 60px;
+      margin-left: 220px;
+      margin-top: 160px;
+    }
+  
+    .tituloMapa {
+      font-size: 20px;
+      margin-left: 75px;
+      margin-top: 230px;
+      padding: 5px;
+    }
+  
+    .needs-validation {
+      height:550px;
+      width: 300px;
+      margin-bottom:40px;
+    }
+    .fondoContactos {
+      height: 100px;
+    }
+    .container{
+      width: 300px;
+      
+    }
+  }
+
+
+
+
+
+
