@@ -157,15 +157,23 @@ body .footer {
   align-content: center;
   display: flex;
   flex-flow: row; }
-
-.cajaProductosPortada div {
-  width: 350px;
-  height: 450px;
-  border-radius: 20px;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; }
+  .cajaProductosPortada div {
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; }
+    .cajaProductosPortada div h4 {
+      color: #b09e80;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 30px;
+      font-weight: 300;
+      text-transform: uppercase;
+      opacity: 0;
+      padding-top: 30px;
+      text-align: center; }
 
 #belleza {
   background-image: url(../imagenes/gifBelleza.gif);
@@ -178,16 +186,6 @@ body .footer {
 #cuidado {
   background-image: url(../imagenes/gifCuidadoPersonal.gif);
   background-size: cover; }
-
-.cajaProductosPortada div h4 {
-  color: #b09e80;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 30px;
-  font-weight: 300;
-  text-transform: uppercase;
-  opacity: 0;
-  padding-top: 30px;
-  text-align: center; }
 
 .cajaProductosPortada div:hover h4 {
   opacity: 1;
@@ -204,24 +202,21 @@ body .footer {
   justify-content: center;
   align-items: center;
   position: relative; }
-
-.cajaMarcas h3 {
-  color: #fff;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 40px;
-  margin-bottom: 20px; }
-
-.cajaMarcas ul {
-  list-style: none;
-  display: flex;
-  flex-flow: row; }
-
-.cajaMarcas ul li {
-  color: #192537;
-  font-size: 20px;
-  margin: 10px;
-  font-family: "Roboto", sans-serif;
-  z-index: 10; }
+  .cajaMarcas h3 {
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px; }
+  .cajaMarcas ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row; }
+    .cajaMarcas ul li {
+      color: #192537;
+      font-size: 20px;
+      margin: 10px;
+      font-family: "Roboto", sans-serif;
+      z-index: 10; }
 
 .resaltadorMarcas {
   background-color: #b09e80;
@@ -359,10 +354,9 @@ body .footer {
   height: 320px;
   margin: 30px;
   position: relative; }
-
-.tarjetaTintura div {
-  backface-visibility: hidden;
-  transition: 1s; }
+  .tarjetaTintura div {
+    backface-visibility: hidden;
+    transition: 1s; }
 
 .front {
   border-radius: 20px;
@@ -442,6 +436,14 @@ body .footer {
   animation-name: cartaDesplegable;
   animation-duration: 0.6s;
   animation-iteration-count: initial; }
+  .tituloColoracion h1 {
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-top: 50px;
+    font-weight: 300;
+    text-align: center;
+    color: #192537; }
 
 @keyframes cartaDesplegable {
   0% {
@@ -464,15 +466,6 @@ body .footer {
   z-index: 1;
   border-radius: 20px; }
 
-.tituloColoracion h1 {
-  font-family: "Josefin Sans", sans-serif;
-  text-transform: uppercase;
-  font-size: 40px;
-  padding-top: 50px;
-  font-weight: 300;
-  text-align: center;
-  color: #192537; }
-
 .carta {
   width: 400px; }
 
@@ -483,14 +476,13 @@ body .footer {
   align-items: center;
   height: 400px;
   margin-bottom: 50px; }
-
-.videoTinturas h3 {
-  font-family: "Josefin Sans", sans-serif;
-  text-transform: uppercase;
-  font-size: 60px;
-  padding-top: 50px;
-  font-weight: 300;
-  color: #b09e80; }
+  .videoTinturas h3 {
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    padding-top: 50px;
+    font-weight: 300;
+    color: #b09e80; }
 
 #iframe {
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.8);
@@ -586,10 +578,9 @@ body .footer {
   height: 590px;
   margin: 30px;
   position: relative; }
-
-.tarjetaCombo div {
-  backface-visibility: hidden;
-  transition: 1s; }
+  .tarjetaCombo div {
+    backface-visibility: hidden;
+    transition: 1s; }
 
 .fotoCombo {
   border-radius: 20px;
@@ -718,12 +709,11 @@ body .footer {
   justify-content: center;
   align-items: center;
   color: #fff; }
-
-.fondoContactos h1 {
-  text-shadow: 0px 20px 30px black;
-  color: #fff;
-  font-size: 30px;
-  font-family: "Josefin Sans", sans-serif; }
+  .fondoContactos h1 {
+    text-shadow: 0px 20px 30px black;
+    color: #fff;
+    font-size: 30px;
+    font-family: "Josefin Sans", sans-serif; }
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
   body {
@@ -1170,7 +1160,7 @@ body .footer {
   .navegador {
     height: 120px;
     padding-left: 50px;
-    padding-right: 50px; }
+    padding-right: 40px; }
   .logo {
     width: 170px;
     height: 70px; }

@@ -14,6 +14,7 @@ letra:uppercase
   align-items: center;
 }
 
+
 * {
     padding: 0;
     margin: 0;
@@ -52,55 +53,8 @@ letra:uppercase
     grid-area: footer;
   }
   
-  .navegador {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 160px;
-    width: 100%;
-    align-items: map-get($formato , alineacion );
-    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
-    padding-left: 150px;
-    padding-right: 150px;
-    background-color:$color_principal;
-  }
-  
-  .logo {
-    width: 250px;
-    height: 100px;
-  }
-  .menu {
-    list-style: none;
-    display: flex;
-    margin-right: 10px;
-    flex-direction: row;
-  }
-  
-  .item__menu {
-    text-decoration: none;
-    color: white;
-    margin: 0 10px;
-    font-family: $fuente_principal;
-    text-transform: map-get($formato, letra );
-  }
-  
-  .item__menu:hover {
-    font-weight: 900;
-  }
-  
-  .checkboton img {
-    width: 30px;
-  }
-  
-  .checkboton {
-    cursor: pointer;
-    display: none;
-  }
-  
-  #check {
-    display: none;
-  }
-  
+@import "navegador";
+
   .header {
     display: flex;
     flex-flow: column wrap;
@@ -195,17 +149,27 @@ letra:uppercase
     align-content: center;
     display: flex;
     flex-flow: row;
+    div {
+      width: 350px;
+      height: 450px;
+      border-radius: 20px;
+      margin: 20px;
+      display: flex;
+      justify-content: map-get($formato , alineacion );
+      align-items: flex-start;
+      h4 {
+        color: $color_secundario;
+        font-family: $fuente_principal;
+        font-size: 30px;
+        font-weight: 300;
+        text-transform: uppercase;
+        opacity: 0;
+        padding-top: 30px;
+        text-align: center;
+      }
+    }
   }
   
-  .cajaProductosPortada div {
-    width: 350px;
-    height: 450px;
-    border-radius: 20px;
-    margin: 20px;
-    display: flex;
-    justify-content: map-get($formato , alineacion );
-    align-items: flex-start;
-  }
   
   #belleza {
     background-image: url(../imagenes/gifBelleza.gif);
@@ -222,16 +186,6 @@ letra:uppercase
     background-size: cover;
   }
   
-  .cajaProductosPortada div h4 {
-    color: $color_secundario;
-    font-family: $fuente_principal;
-    font-size: 30px;
-    font-weight: 300;
-    text-transform: uppercase;
-    opacity: 0;
-    padding-top: 30px;
-    text-align: center;
-  }
   
   .cajaProductosPortada div:hover h4 {
     opacity: 1;
@@ -247,27 +201,24 @@ letra:uppercase
     height: 300px;
     @include flex;
     position: relative;
-  }
-  
-  .cajaMarcas h3 {
-    color: #fff;
-    font-family:$fuente_principal;
-    font-size: 40px;
-    margin-bottom: 20px;
-  }
-  
-  .cajaMarcas ul {
-    list-style: none;
-    display: flex;
-    flex-flow: row;
-  }
-  
-  .cajaMarcas ul li {
-    color: $color_principal;
-    font-size: 20px;
-    margin: 10px;
-    font-family: "Roboto", sans-serif;
-    z-index: 10;
+    h3 {
+      color: #fff;
+      font-family:$fuente_principal;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      flex-flow: row;
+      li {
+        color: $color_principal;
+        font-size: 20px;
+        margin: 10px;
+        font-family: "Roboto", sans-serif;
+        z-index: 10;
+      }
+    }
   }
   
   .resaltadorMarcas {
@@ -300,85 +251,8 @@ letra:uppercase
       left: 350px;
     }
   }
-  
-  .footer {
-    width: 100%;
-    height: 400px;
-    background-color: $color_secundario;
-  }
-  
-  .cuerpo__footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  
-  .cajas__footer {
-    margin-top: 80px;
-    width: 250px;
-  }
-  
-  .titulos__footer {
-    font-size: 15px;
-    font-family:$fuente_principal;
-    color: $color_principal;
-    margin-bottom: 15px;
-  }
-  
-  .parrafo__footer {
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    margin-bottom: 20px;
-    text-align: left;
-    list-style: none;
-  }
-  
-  .caja__qr {
-    margin-top: 80px;
-    width: 250p100x;
-  }
-  
-  .qr__footer {
-    border-radius: 10px;
-  }
-  
-  .caja__copyright {
-    width: 100%;
-    height: 20px;
-    @include flex;
-    margin-top: 80px;
-    font-family:$fuente_principal;
-    color: white;
-    font-size: 15px;
-  }
-  
-  .mail__footer {
-    width: 100px;
-    height: 30px;
-    border: none;
-    padding: 5px;
-  }
-  
-  .boton__footer {
-    border-radius: 30px;
-    border-style: none;
-    width: 40px;
-    height: 40px;
-    margin-left: 5px;
-    background-color: $color_principal;
-    color:$color_secundario;
-    font-family: "Roboto", sans-serif;
-    transition: 0.2s;
-  }
-  
-  .boton__footer:hover {
-    background-color: $color_secundario;
-    color: $color_principal;
-    border: 2px $color_principal solid;
-    width: 60px;
-    height: 60px;
-  }
-  
+  @import "footer";
+
   #bodyColoracion {
     margin: 0;
     display: grid;
@@ -429,11 +303,10 @@ letra:uppercase
     height: 320px;
     margin: 30px;
     position: relative;
-  }
-  
-  .tarjetaTintura div {
-    backface-visibility: hidden;
-    transition: 1s;
+     div {
+      backface-visibility: hidden;
+      transition: 1s;
+    }
   }
   
   .front {
@@ -516,6 +389,15 @@ letra:uppercase
     animation-name: cartaDesplegable;
     animation-duration: 0.6s;
     animation-iteration-count: initial;
+    h1 {
+      font-family: $fuente_principal;
+      text-transform: uppercase;
+      font-size: 40px;
+      padding-top: 50px;
+      font-weight: 300;
+      text-align: center;
+      color: $color_principal;
+    }
   }
   
   @keyframes cartaDesplegable {
@@ -544,15 +426,6 @@ letra:uppercase
     border-radius: 20px;
   }
   
-  .tituloColoracion h1 {
-    font-family: $fuente_principal;
-    text-transform: uppercase;
-    font-size: 40px;
-    padding-top: 50px;
-    font-weight: 300;
-    text-align: center;
-    color: $color_principal;
-  }
   .carta {
     width: 400px;
   }
@@ -561,16 +434,16 @@ letra:uppercase
     @include flex;
     height: 400px;
     margin-bottom: 50px;
+    h3 {
+      font-family:  $fuente_principal;
+      text-transform: uppercase;
+      font-size: 60px;
+      padding-top: 50px;
+      font-weight: 300;
+      color: $color_secundario;
+    }
   }
   
-  .videoTinturas h3 {
-    font-family:  $fuente_principal;
-    text-transform: uppercase;
-    font-size: 60px;
-    padding-top: 50px;
-    font-weight: 300;
-    color: $color_secundario;
-  }
   #iframe {
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.8);
     width: 700px;
@@ -689,10 +562,10 @@ letra:uppercase
     height: 590px;
     margin: 30px;
     position: relative;
-  }
-  .tarjetaCombo div {
-    backface-visibility: hidden;
-    transition: 1s;
+    div {
+      backface-visibility: hidden;
+      transition: 1s;
+    }
   }
   
   .fotoCombo {
@@ -844,16 +717,13 @@ letra:uppercase
     justify-content: center;
     align-items: center;
     color:#fff;
+    h1{
+      text-shadow: 0px 20px 30px rgba(0, 0, 0, 1);
+      color:#fff;
+      font-size: 30px;
+      font-family:$fuente_principal ;
+    }
   }
-
-  .fondoContactos h1{
-    text-shadow: 0px 20px 30px rgba(0, 0, 0, 1);
-    color:#fff;
-    font-size: 30px;
-    font-family:$fuente_principal ;
-  }
-
-  
 
   @media screen and (max-width: 768px) and (min-width: 481px)   {
     body {
@@ -1228,19 +1098,6 @@ letra:uppercase
     }
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-  
   @media screen and (max-width: 480px) and (min-width:321px) {
     body {
       background-color:$color_principal;
@@ -1612,7 +1469,7 @@ letra:uppercase
     .navegador {
       height: 120px;
       padding-left: 50px;
-      padding-right: 50px;
+      padding-right: 40px;
     }
   
     .logo {
@@ -1941,7 +1798,6 @@ letra:uppercase
       
     }
   }
-
 
 
 

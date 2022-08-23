@@ -1,0 +1,79 @@
+ 
+  .footer {
+    width: 100%;
+    height: 400px;
+    background-color: $color_secundario;
+  }
+  
+  .cuerpo__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .cajas__footer {
+    margin-top: 80px;
+    width: 250px;
+  }
+  
+  .titulos__footer {
+    font-size: 15px;
+    font-family:$fuente_principal;
+    color: $color_principal;
+    margin-bottom: 15px;
+  }
+  
+  .parrafo__footer {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+    list-style: none;
+  }
+  
+  .caja__qr {
+    margin-top: 80px;
+    width: 250p100x;
+  }
+  
+  .qr__footer {
+    border-radius: 10px;
+  }
+  
+  .caja__copyright {
+    width: 100%;
+    height: 20px;
+    @include flex;
+    margin-top: 80px;
+    font-family:$fuente_principal;
+    color: white;
+    font-size: 15px;
+  }
+  
+  .mail__footer {
+    width: 100px;
+    height: 30px;
+    border: none;
+    padding: 5px;
+  }
+  
+  .boton__footer {
+    border-radius: 30px;
+    border-style: none;
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    background-color: $color_principal;
+    color:$color_secundario;
+    font-family: "Roboto", sans-serif;
+    transition: 0.2s;
+  }
+  
+  .boton__footer:hover {
+    background-color: $color_secundario;
+    color: $color_principal;
+    border: 2px $color_principal solid;
+    width: 60px;
+    height: 60px;
+  }
+  

@@ -1,0 +1,49 @@
+.navegador {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 160px;
+  width: 100%;
+  align-items: map-get($formato , alineacion );
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+  padding-left: 150px;
+  padding-right: 150px;
+  background-color:$color_principal;
+}
+
+.logo {
+  width: 250px;
+  height: 100px;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  margin-right: 10px;
+  flex-direction: row;
+}
+
+.item__menu {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  font-family: $fuente_principal;
+  text-transform: map-get($formato, letra );
+}
+
+.item__menu:hover {
+  font-weight: 900;
+}
+
+.checkboton img {
+  width: 30px;
+}
+
+.checkboton {
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+

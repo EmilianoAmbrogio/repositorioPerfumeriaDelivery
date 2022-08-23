@@ -1,7 +1,7 @@
 {
   "name": "repositoriodeliveryperfumeria",
   "version": "1.0.0",
-  "description": "",
+  "description": "venta de productos de perfumería, ofertas de perfumería por delivery y retiro en la sucursal",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/EmilianoAmbrogio/repositorioPerfumeriaDelivery.git"
   },
-  "author": "",
+  "author": "Emiliano Ambrogio",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/EmilianoAmbrogio/repositorioPerfumeriaDelivery/issues"
