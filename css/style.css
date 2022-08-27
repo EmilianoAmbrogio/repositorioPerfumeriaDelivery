@@ -202,7 +202,7 @@ body .footer {
   justify-content: center;
   align-items: center;
   position: relative; }
-  .cajaMarcas h3 {
+  .cajaMarcas h4 {
     color: #fff;
     font-family: "Josefin Sans", sans-serif;
     font-size: 40px;
@@ -522,9 +522,10 @@ body .footer {
 
 .tituloOfertas {
   height: 580px;
-  width: 390x;
+  width: 400px;
   margin-top: 60px;
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
   position: relative; }
 
@@ -864,9 +865,13 @@ body .footer {
     border-radius: 20px;
     width: 300px;
     padding: 0px 10px 5px 10px; }
-  .tintura1, .tintura3, .tintura5 {
+  .tintura1,
+  .tintura3,
+  .tintura5 {
     justify-self: end; }
-  .tintura2, .tintura4, .tintura6 {
+  .tintura2,
+  .tintura4,
+  .tintura6 {
     justify-self: start; }
   .tituloColoracion {
     height: 140px;
@@ -1290,7 +1295,12 @@ body .footer {
     border-radius: 20px;
     width: 250px;
     padding: 0px 10px 5px 10px; }
-  .tintura1, .tintura2, .tintura3, .tintura4, .tintura5, .tintura6 {
+  .tintura1,
+  .tintura2,
+  .tintura3,
+  .tintura4,
+  .tintura5,
+  .tintura6 {
     justify-self: center; }
   .tituloColoracion {
     height: 170px;
@@ -1334,7 +1344,11 @@ body .footer {
     width: 230px;
     height: 340px;
     padding: 0px 10px 5px 10px; }
-  .ofertaGel, .ofertaTeatrical, .combo2, .combo1, .ofertaColbert {
+  .ofertaGel,
+  .ofertaTeatrical,
+  .combo2,
+  .combo1,
+  .ofertaColbert {
     justify-self: center;
     margin-right: 5px;
     margin-left: 5px; }
