@@ -1,0 +1,381 @@
+
+@media screen and (max-width: 320px) {
+    body {
+      background-color: $color_principal;
+      display: grid;
+      grid-template-areas:
+        "navegador"
+        "header"
+        "cajaNosotros"
+        "cajaProductosPortada"
+        "cajaMarcas"
+        "footer";
+    }
+  
+    body .navegador {
+      grid-area: navegador;
+    }
+    body .header {
+      grid-area: header;
+    }
+    body .cajaNosotros {
+      grid-area: cajaNosotros;
+    }
+    body .cajaProductosPortada {
+      grid-area: cajaProductosPortada;
+    }
+    body .cajaMarcas {
+      grid-area: cajaMarcas;
+    }
+    body .footer {
+      grid-area: footer;
+    }
+  
+    .navegador {
+      height: 120px;
+      padding-left: 50px;
+      padding-right: 40px;
+      top: 0; 
+      right: 0;
+      left:0;
+      position:fixed;
+      z-index: 100;
+  
+    }
+  
+    .logo {
+      width: 170px;
+      height: 70px;
+    }
+  
+    .menu {
+      flex-direction: column;
+      align-items: center;
+      background-color: $color_secundario;
+      position: fixed;
+      top: 120px;
+      width: 100%;
+      height: calc(100vh - 120px);
+      overflow: auto;
+      z-index: 50;
+      padding-top: 25px;
+      left: 100%;
+      transition: all 1s;
+    }
+  
+    .item__menu {
+      font-size: 25px;
+      color: $color_principal;
+      font-family: $fuente_principal;
+    }
+  
+    .navegador ul li {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  
+    .checkboton {
+      display: inline-block;
+    }
+  
+    #check:checked ~ .menu {
+      left: 0;
+    }
+  
+    .header {
+      margin-top: 120px;
+      height: calc(100vh - 100px);
+    }
+  
+    .frase__principal__portada {
+      font-size: 40px;
+      text-align: center;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  
+    .frase__secundaria__portada {
+      padding: 10px;
+    }
+  
+    .cajaNosotros {
+      height: 280px;
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-top: 40px;
+    }
+  
+    .titulo__cajaNosotros {
+      font-size: 30px;
+    }
+  
+    .parrafo__cajaNosotros {
+      margin: 2px;
+      margin-top: 10px;
+      margin-bottom: 50px;
+    }
+  
+    .cajaProductosPortada {
+      flex-flow: column;
+      margin-top: 30px;
+    }
+    .cajaProductosPortada div {
+      width: 230px;
+      height: 350px;
+      border-radius: 20px;
+      margin: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+    #belleza {
+      background-image: url(../imagenes/gifBelleza.gif);
+      background-size: contain;
+      background-position: bottom;
+    }
+  
+    #coloracion {
+      background-image: url(../imagenes/gifColoracion.gif);
+      background-size: contain;
+      background-position: bottom;
+    }
+  
+    #cuidado {
+      background-image: url(../imagenes/gifCuidadoPersonal.gif);
+      background-size: contain;
+      background-position: bottom;
+    }
+  
+    .cajaMarcas h4 {
+      color: #fff;
+      font-family: $fuente_principal;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+  
+    .cajaMarcas ul {
+      flex-flow: column;
+      align-items: center;
+    }
+  
+    .cajaMarcas ul li {
+      color: #192537;
+      margin: 0px;
+    }
+  
+    .resaltadorMarcas {
+      animation-duration: 10s;
+    }
+  
+    @keyframes resaltaAnimacion {
+      0% {
+        width: 200px;
+        top: 100px;
+        bottom: 200px;
+        left: 60px;
+      }
+      50% {
+        width: 100px;
+        top: 220px;
+        bottom: 15px;
+        left: 110px;
+      }
+      100% {
+        width: 200px;
+        top: 100px;
+        bottom: 200px;
+        left: 60px;
+      }
+    }
+  
+    .footer {
+      height: 800px;
+    }
+  
+    .cuerpo__footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cajas__footer {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .parrafo__footer {
+      text-align: center;
+    }
+  
+    .caja__qr {
+      margin-top: 40px;
+    }
+  
+    .caja__copyright {
+      height: 40px;
+      margin-top: 30px;
+      background-color: #192537;
+      align-items: center;
+    }
+  
+    #bodyColoracion {
+      margin: 0;
+      display: grid;
+      grid-template-areas:
+        "navegador"
+        "tituloColoracion"
+        "tintura1"
+        "tintura2"
+        "tintura3"
+        "tintura4"
+        "tintura5"
+        "tintura6"
+        "videoTinturas"
+        "footer";
+    }
+  
+    .tarjetaTintura {
+      width: 250px;
+      height: 250px;
+      position: relative;
+    }
+  
+    .fotoTintura {
+      border-radius: 20px;
+      width: 250px;
+      padding: 0px 10px 5px 10px;
+    }
+  
+    .tintura1,
+    .tintura2,
+    .tintura3,
+    .tintura4,
+    .tintura5,
+    .tintura6 {
+      justify-self: center;
+    }
+  
+    .tituloColoracion {
+      margin-top: 120px;
+      height: 170px;
+      width: 240px;
+      border-radius: 0px 0px 40px 40px;
+    }
+  
+    .tituloColoracion h1 {
+      font-size: 40px;
+      padding-top: 20px;
+      font-weight: 300;
+    }
+  
+    .carta {
+      width: 200px;
+      position: absolute;
+      margin-top: 130px;
+    }
+  
+    .videoTinturas {
+      height: 400px;
+      margin-bottom: 50px;
+    }
+    #iframe {
+      width: 250px;
+      height: 210px;
+    }
+  
+    #bodyOfertas {
+      margin: 0;
+      display: grid;
+      grid-template-areas:
+        " navegador "
+        " tituloOfertas "
+        " combo1"
+        " ofertaTeatrical"
+        "ofertaGel"
+        "combo2"
+        "ofertaColbert"
+        "footer";
+    }
+  
+    .tituloOfertas {
+      height: 330px;
+      margin-top: 160px;
+      width: 300px;
+    }
+  
+    #letrasOfertas2 {
+      font-size: 115px;
+      line-height: 110px;
+    }
+    #letrasOfertas1 {
+      font-size: 135px;
+      line-height: 110px;
+    }
+    .tarjetaCombo {
+      width: 240px;
+      height: 430px;
+      margin: 30px;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .fotoCombo {
+      border-radius: 20px;
+      width: 230px;
+      height: 340px;
+      padding: 0px 10px 5px 10px;
+    }
+    .ofertaGel,
+    .ofertaTeatrical,
+    .combo2,
+    .combo1,
+    .ofertaColbert {
+      justify-self: center;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  
+    .header-away {
+      height: calc(100vh - 100px);
+    }
+  
+    .botonAuto {
+      margin-bottom: 120px;
+    }
+  
+    @keyframes autito {
+      0% {
+        margin-right: 500px;
+      }
+      100% {
+        margin-left: 900px;
+      }
+    }
+  .wasap{
+    width: 60px;
+  }
+    .link_wasap{
+      margin-left: 130px;
+    }
+    
+    .tituloMapa {
+      margin-left: 45px;
+      font-size: 20px;
+      padding-right: 5px;
+    }
+  
+    .needs-validation {
+      margin-top: 120px;
+      height: 550px;
+      width: 300px;
+      margin-bottom: 40px;
+    }
+    .fondoContactos {
+      height: 100px;
+    }
+    .container {
+      width: 300px;
+    }
+  }
+  

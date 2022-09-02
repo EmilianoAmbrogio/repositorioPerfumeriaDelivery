@@ -1,0 +1,328 @@
+
+@media screen and (max-width: 480px) and (min-width: 321px) {
+    body {
+      background-color: $color_principal;
+      display: grid;
+      grid-template-areas:
+        "navegador"
+        "header"
+        "cajaNosotros"
+        "cajaProductosPortada"
+        "cajaMarcas"
+        "footer";
+    }
+  
+    body .navegador {
+      grid-area: navegador;
+    }
+    body .header {
+      grid-area: header;
+    }
+    body .cajaNosotros {
+      grid-area: cajaNosotros;
+    }
+    body .cajaProductosPortada {
+      grid-area: cajaProductosPortada;
+    }
+    body .cajaMarcas {
+      grid-area: cajaMarcas;
+    }
+    body .footer {
+      grid-area: footer;
+    }
+  
+    .navegador {
+      height: 100px;
+      padding-left: 50px;
+      padding-right: 50px;
+      top: 0; 
+      right: 0;
+      left:0;
+      position:fixed;
+      z-index: 100;
+    }
+  
+    .logo {
+      width: 170px;
+      height: 70px;
+    }
+  
+    .menu {
+      flex-direction: column;
+      align-items: center;
+      background-color: $color_secundario;
+      position: fixed;
+      top: 100px;
+      width: 100%;
+      height: calc(100vh - 100px);
+      overflow: auto;
+      z-index: 50;
+      padding-top: 25px;
+      left: 100%;
+      transition: all 1s;
+    }
+  
+    .item__menu {
+      font-size: 25px;
+      color: $color_principal;
+      font-family: $fuente_principal;
+    }
+  
+    .navegador ul li {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  
+    .checkboton {
+      display: inline-block;
+    }
+  
+    #check:checked ~ .menu {
+      left: 0;
+    }
+  
+    .header {
+      margin-top: 100px;
+      height: calc(100vh - 100px);
+    }
+  
+    .frase__principal__portada {
+      font-size: 40px;
+      text-align: center;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  
+    .frase__secundaria__portada {
+      padding: 10px;
+    }
+  
+    .cajaNosotros {
+      height: 280px;
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-bottom: 30px;
+    }
+  
+    .titulo__cajaNosotros {
+      font-size: 50px;
+    }
+  
+    .parrafo__cajaNosotros {
+      margin: 2px;
+      margin-top: 15px;
+    }
+  
+    .cajaProductosPortada {
+      flex-flow: column;
+    }
+  
+    .cajaMarcas h3 {
+      color: #fff;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+  
+    .cajaMarcas ul {
+      flex-flow: column;
+      align-items: center;
+    }
+  
+    .cajaMarcas ul li {
+      color: #192537;
+      margin: 0px;
+    }
+  
+    .resaltadorMarcas {
+      animation-duration: 10s;
+    }
+  
+    @keyframes resaltaAnimacion {
+      0% {
+        width: 200px;
+        top: 105px;
+        bottom: 120px;
+        left: 138px;
+      }
+      50% {
+        width: 100px;
+        top: 225px;
+        bottom: 20px;
+        left: 190px;
+      }
+      100% {
+        width: 200px;
+        top: 105px;
+        bottom: 120px;
+        left: 138px;
+      }
+    }
+  
+    .footer {
+      height: 800px;
+    }
+  
+    .cuerpo__footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cajas__footer {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .parrafo__footer {
+      text-align: center;
+    }
+  
+    .caja__qr {
+      margin-top: 40px;
+    }
+  
+    .caja__copyright {
+      height: 40px;
+      margin-top: 30px;
+      background-color: #192537;
+      align-items: center;
+    }
+  
+    #bodyColoracion {
+      margin: 0;
+      display: grid;
+      grid-template-areas:
+        "navegador"
+        "tituloColoracion"
+        "tintura1"
+        "tintura2"
+        "tintura3"
+        "tintura4"
+        "tintura5"
+        "tintura6"
+        "videoTinturas"
+        "footer";
+    }
+  
+    .tarjetaTintura {
+      width: 350px;
+      height: 320px;
+      position: relative;
+    }
+  
+    .tintura1,
+    .tintura4,
+    .tintura3,
+    .tintura6 {
+      justify-self: center;
+    }
+  
+    .tituloColoracion {
+      margin-top: 100px;
+      height: 140px;
+      width: 400px;
+      border-radius: 0px 0px 80px 80px;
+    }
+  
+    .tituloColoracion h1 {
+      font-size: 40px;
+      padding-top: 20px;
+      font-weight: 300;
+    }
+  
+    .carta {
+      width: 300px;
+      position: absolute;
+      margin-top: 83px;
+    }
+  
+    .videoTinturas {
+      height: 400px;
+      margin-bottom: 50px;
+    }
+    #iframe {
+      width: 350px;
+      height: 210px;
+    }
+  
+    #bodyOfertas {
+      margin: 0;
+      display: grid;
+      grid-template-areas:
+        " navegador "
+        " tituloOfertas "
+        " combo1"
+        " ofertaTeatrical"
+        "ofertaGel"
+        "combo2"
+        "ofertaColbert"
+        "footer";
+    }
+  
+    .tituloOfertas {
+      height: 450px;
+      margin-top: 110px;
+      width:280px;
+     margin-left:auto;
+     margin-right: auto;
+    }
+  
+    #letrasOfertas2 {
+      font-size: 140px;
+      line-height: 120px;
+    }
+    #letrasOfertas1 {
+      font-size: 150px;
+      line-height: 120px;
+    }
+  
+    .tarjetaCombo {
+      margin: none;
+    }
+    .ofertaGel {
+      justify-self: center;
+    }
+    .ofertaTeatrical , .combo2 , .ofertaColbert , .combo1 {
+    justify-self: center;
+     margin-left: auto;
+     margin-right: auto;
+    }
+  
+    .header-away {
+      margin-top: 100px;
+      height: calc(100vh - 100px);
+    }
+  
+    .botonAuto {
+      margin-bottom: 120px;
+    }
+  
+    @keyframes autito {
+      0% {
+        margin-right: 1000px;
+      }
+      100% {
+        margin-left: 1500px;
+      }
+    }
+  
+  
+    .link_wasap{
+      margin-left: 220px;
+    }
+    
+    .tituloMapa {
+      margin-left: 100px;
+    }
+  
+    .needs-validation {
+      height: 550px;
+      margin-bottom: 40px;
+      margin-top: 100px;
+    }
+    .fondoContactos {
+      height: 140px;
+    }
+  }
