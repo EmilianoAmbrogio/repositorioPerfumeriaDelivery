@@ -169,17 +169,17 @@ body .footer {
 }
 
 #belleza {
-  background-image: url(../imagenes/gifBelleza.gif);
+  background-image: url(../Imagenes/gifBelleza.gif);
   background-size: cover;
 }
 
 #coloracion {
-  background-image: url(../imagenes/gifColoracion.gif);
+  background-image: url(../Imagenes/gifColoracion.gif);
   background-size: cover;
 }
 
 #cuidado {
-  background-image: url(../imagenes/gifCuidadoPersonal.gif);
+  background-image: url(../Imagenes/gifCuidadoPersonal.gif);
   background-size: cover;
 }
 
@@ -317,7 +317,7 @@ body .footer {
 
 .reverso {
   border-radius: 20px;
-  background-image: url(../imagenes/pelo.jpg);
+  background-image: url(../Imagenes/pelo.jpg);
   background-size: cover;
   transform: perspective(500px) rotateY(180deg);
   width: 100%;
@@ -617,7 +617,7 @@ body .footer {
 }
 .header-away {
   @extend .header;
-  background-image: url(../imagenes/takeAway.JPG);
+  background-image: url(../Imagenes/takeAway.JPG);
   background-position: initial;
 }
 .header-away:before {
@@ -702,7 +702,7 @@ body .footer {
 }
 
 .fondoContactos {
-  background-image: url(../imagenes/gif-contactos.gif);
+  background-image: url(../Imagenes/gif-contactos.gif);
   background-size: cover;
   background-position: center;
   height: 200px;

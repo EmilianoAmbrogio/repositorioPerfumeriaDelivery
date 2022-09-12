@@ -6,7 +6,12 @@
 body {
   background-color: #192537;
   display: grid;
-  grid-template-areas: "navegador" "header" "cajaNosotros" "cajaProductosPortada" "cajaMarcas" "footer"; }
+  grid-template-areas: "navegador"
+ "header"
+ "cajaNosotros"
+ "cajaProductosPortada"
+ "cajaMarcas"
+ "footer"; }
 
 body .navegador {
   grid-area: navegador; }
@@ -177,15 +182,15 @@ body .footer {
       text-align: center; }
 
 #belleza {
-  background-image: url(../imagenes/gifBelleza.gif);
+  background-image: url(../Imagenes/gifBelleza.gif);
   background-size: cover; }
 
 #coloracion {
-  background-image: url(../imagenes/gifColoracion.gif);
+  background-image: url(../Imagenes/gifColoracion.gif);
   background-size: cover; }
 
 #cuidado {
-  background-image: url(../imagenes/gifCuidadoPersonal.gif);
+  background-image: url(../Imagenes/gifCuidadoPersonal.gif);
   background-size: cover; }
 
 .cajaProductosPortada div:hover h4 {
@@ -318,7 +323,12 @@ body .footer {
 #bodyColoracion {
   margin: 0;
   display: grid;
-  grid-template-areas: "navegador navegador navegador" "tituloColoracion tituloColoracion tituloColoracion" "tintura1 tintura2 tintura3" "tintura4 tintura5 tintura6" "videoTinturas videoTinturas videoTinturas" "footer footer footer"; }
+  grid-template-areas: "navegador navegador navegador"
+ "tituloColoracion tituloColoracion tituloColoracion"
+ "tintura1 tintura2 tintura3"
+ "tintura4 tintura5 tintura6"
+ "videoTinturas videoTinturas videoTinturas"
+ "footer footer footer"; }
 
 #bodyColoracion .navegador {
   grid-area: navegador; }
@@ -373,7 +383,7 @@ body .footer {
 
 .reverso {
   border-radius: 20px;
-  background-image: url(../imagenes/pelo.jpg);
+  background-image: url(../Imagenes/pelo.jpg);
   background-size: cover;
   transform: perspective(500px) rotateY(180deg);
   width: 100%;
@@ -494,7 +504,11 @@ body .footer {
 #bodyOfertas {
   margin: 0;
   display: grid;
-  grid-template-areas: " navegador             navegador        navegador" " combo1               tituloOfertas    ofertaGel" " combo1               tituloOfertas    combo2 " " ofertaTeatrical      ofertaColbert    combo2" " footer                footer           footer"; }
+  grid-template-areas: " navegador             navegador        navegador"
+ " combo1               tituloOfertas    ofertaGel"
+ " combo1               tituloOfertas    combo2 "
+ " ofertaTeatrical      ofertaColbert    combo2"
+ " footer                footer           footer"; }
 
 #bodyOfertas .navegador {
   grid-area: navegador;
@@ -607,7 +621,10 @@ body .footer {
 #bodyAway {
   margin: 0;
   display: grid;
-  grid-template-areas: "navegador" "header-away" "cajaMapa" "footer"; }
+  grid-template-areas: "navegador"
+ "header-away"
+ "cajaMapa"
+ "footer"; }
 
 #bodyAway .navegador {
   grid-area: navegador; }
@@ -622,7 +639,7 @@ body .footer {
   grid-area: footer; }
 
 .header-away {
-  background-image: url(../imagenes/takeAway.JPG);
+  background-image: url(../Imagenes/takeAway.JPG);
   background-position: initial; }
 
 .header-away:before {
@@ -698,7 +715,7 @@ body .footer {
   justify-content: center; }
 
 .fondoContactos {
-  background-image: url(../imagenes/gif-contactos.gif);
+  background-image: url(../Imagenes/gif-contactos.gif);
   background-size: cover;
   background-position: center;
   height: 200px;
@@ -726,7 +743,12 @@ body .footer {
   body {
     background-color: #192537;
     display: grid;
-    grid-template-areas: "navegador" "header" "cajaNosotros" "cajaProductosPortada" "cajaMarcas" "footer"; }
+    grid-template-areas: "navegador"
+ "header"
+ "cajaNosotros"
+ "cajaProductosPortada"
+ "cajaMarcas"
+ "footer"; }
   body .navegador {
     grid-area: navegador; }
   body .header, body .header-away {
@@ -799,15 +821,15 @@ body .footer {
     justify-content: center;
     align-items: flex-start; }
   #belleza {
-    background-image: url(../imagenes/gifBelleza.gif);
+    background-image: url(../Imagenes/gifBelleza.gif);
     background-size: contain;
     background-position: bottom; }
   #coloracion {
-    background-image: url(../imagenes/gifColoracion.gif);
+    background-image: url(../Imagenes/gifColoracion.gif);
     background-size: contain;
     background-position: bottom; }
   #cuidado {
-    background-image: url(../imagenes/gifCuidadoPersonal.gif);
+    background-image: url(../Imagenes/gifCuidadoPersonal.gif);
     background-size: contain;
     background-position: bottom; }
   .cajaMarcas h3 {
@@ -866,7 +888,13 @@ body .footer {
   #bodyColoracion {
     margin: 0;
     display: grid;
-    grid-template-areas: "navegador navegador" "tituloColoracion tituloColoracion" "tintura1 tintura2" "tintura3  tintura4" "tintura5 tintura6" "videoTinturas videoTinturas" "footer footer"; }
+    grid-template-areas: "navegador navegador"
+ "tituloColoracion tituloColoracion"
+ "tintura1 tintura2"
+ "tintura3  tintura4"
+ "tintura5 tintura6"
+ "videoTinturas videoTinturas"
+ "footer footer"; }
   .tarjetaTintura {
     width: 300px;
     height: 280px;
@@ -906,7 +934,13 @@ body .footer {
   #bodyOfertas {
     margin: 0;
     display: grid;
-    grid-template-areas: " navegador navegador" " tituloOfertas ofertaTeatrical  " " tituloOfertas ofertaGel  " " comnbo1 combo2 " "combo1 combo2 " "ofertaColbert ofertaColbert" "footer footer"; }
+    grid-template-areas: " navegador navegador"
+ " tituloOfertas ofertaTeatrical  "
+ " tituloOfertas ofertaGel  "
+ " comnbo1 combo2 "
+ "combo1 combo2 "
+ "ofertaColbert ofertaColbert"
+ "footer footer"; }
   .ofertaColbert {
     display: none; }
   .tituloOfertas {
@@ -940,7 +974,10 @@ body .footer {
   #bodyAway {
     margin: 0;
     display: grid;
-    grid-template-areas: "navegador" "header-away" "cajaMapa" "footer"; }
+    grid-template-areas: "navegador"
+ "header-away"
+ "cajaMapa"
+ "footer"; }
   #bodyAway .navegador {
     grid-area: navegador; }
   #bodyAway .header-away {
@@ -974,7 +1011,12 @@ body .footer {
   body {
     background-color: #192537;
     display: grid;
-    grid-template-areas: "navegador" "header" "cajaNosotros" "cajaProductosPortada" "cajaMarcas" "footer"; }
+    grid-template-areas: "navegador"
+ "header"
+ "cajaNosotros"
+ "cajaProductosPortada"
+ "cajaMarcas"
+ "footer"; }
   body .navegador {
     grid-area: navegador; }
   body .header, body .header-away {
@@ -1096,7 +1138,16 @@ body .footer {
   #bodyColoracion {
     margin: 0;
     display: grid;
-    grid-template-areas: "navegador" "tituloColoracion" "tintura1" "tintura2" "tintura3" "tintura4" "tintura5" "tintura6" "videoTinturas" "footer"; }
+    grid-template-areas: "navegador"
+ "tituloColoracion"
+ "tintura1"
+ "tintura2"
+ "tintura3"
+ "tintura4"
+ "tintura5"
+ "tintura6"
+ "videoTinturas"
+ "footer"; }
   .tarjetaTintura {
     width: 350px;
     height: 320px;
@@ -1128,7 +1179,14 @@ body .footer {
   #bodyOfertas {
     margin: 0;
     display: grid;
-    grid-template-areas: " navegador " " tituloOfertas " " combo1" " ofertaTeatrical" "ofertaGel" "combo2" "ofertaColbert" "footer"; }
+    grid-template-areas: " navegador "
+ " tituloOfertas "
+ " combo1"
+ " ofertaTeatrical"
+ "ofertaGel"
+ "combo2"
+ "ofertaColbert"
+ "footer"; }
   .tituloOfertas {
     height: 450px;
     margin-top: 110px;
@@ -1174,7 +1232,12 @@ body .footer {
   body {
     background-color: #192537;
     display: grid;
-    grid-template-areas: "navegador" "header" "cajaNosotros" "cajaProductosPortada" "cajaMarcas" "footer"; }
+    grid-template-areas: "navegador"
+ "header"
+ "cajaNosotros"
+ "cajaProductosPortada"
+ "cajaMarcas"
+ "footer"; }
   body .navegador {
     grid-area: navegador; }
   body .header, body .header-away {
@@ -1256,15 +1319,15 @@ body .footer {
     justify-content: center;
     align-items: flex-start; }
   #belleza {
-    background-image: url(../imagenes/gifBelleza.gif);
+    background-image: url(../Imagenes/gifBelleza.gif);
     background-size: contain;
     background-position: bottom; }
   #coloracion {
-    background-image: url(../imagenes/gifColoracion.gif);
+    background-image: url(../Imagenes/gifColoracion.gif);
     background-size: contain;
     background-position: bottom; }
   #cuidado {
-    background-image: url(../imagenes/gifCuidadoPersonal.gif);
+    background-image: url(../Imagenes/gifCuidadoPersonal.gif);
     background-size: contain;
     background-position: bottom; }
   .cajaMarcas h4 {
@@ -1318,7 +1381,16 @@ body .footer {
   #bodyColoracion {
     margin: 0;
     display: grid;
-    grid-template-areas: "navegador" "tituloColoracion" "tintura1" "tintura2" "tintura3" "tintura4" "tintura5" "tintura6" "videoTinturas" "footer"; }
+    grid-template-areas: "navegador"
+ "tituloColoracion"
+ "tintura1"
+ "tintura2"
+ "tintura3"
+ "tintura4"
+ "tintura5"
+ "tintura6"
+ "videoTinturas"
+ "footer"; }
   .tarjetaTintura {
     width: 250px;
     height: 250px;
@@ -1356,7 +1428,14 @@ body .footer {
   #bodyOfertas {
     margin: 0;
     display: grid;
-    grid-template-areas: " navegador " " tituloOfertas " " combo1" " ofertaTeatrical" "ofertaGel" "combo2" "ofertaColbert" "footer"; }
+    grid-template-areas: " navegador "
+ " tituloOfertas "
+ " combo1"
+ " ofertaTeatrical"
+ "ofertaGel"
+ "combo2"
+ "ofertaColbert"
+ "footer"; }
   .tituloOfertas {
     height: 330px;
     margin-top: 160px;
